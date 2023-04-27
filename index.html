@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <title>FitZone</title>
 </head>
 <body>
-    <nav class="flex flex-row w-full  h-auto p-6 fixed">
+    <nav class="flex flex-row w-full  h-auto p-6 fixed z-50">
         <div class="">
             <div><h1 class="text-3xl font-bold text-white text-center italic">FitZone</h1></div>
         </div>
@@ -24,7 +25,7 @@
         <div class="mt-auto mb-36 w-full flex flex-col pl-6">
             <div class="text-white font-bold text-5xl">
                 <h2 class="">Achieve your dreams at</h2>
-                <p class="text-6xl text-zinc-200 pt-2">FitZone</p>
+                <p class="text-6xl text-zinc-300 pt-2">FitZone</p>
             </div>
             <div class="ml-auto mr-auto text-white font-bold mb-auto pt-28">
                 <button class="border-4 rounded p-3 text-base">Become a member</button>
@@ -35,7 +36,7 @@
 
     <!-- Overview section -->
     <div class="flex w-full p-6 bg-gradient-to-b from-zinc-900 to-zinc-500 flex-col pb-20">
-        <div class="mx-auto mt-10"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-4">What we offer</h2></div>
+        <div class="mx-auto mt-10"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-4">What we offer:</h2></div>
         <div class="mt-8 mx-auto border-4 rounded-xl border-neutral-200 p-8">
             <div>
                 <img class="mx-auto w-24" src="./img/hantel-neutral.png">
@@ -55,56 +56,25 @@
             </div>
         </div>
 
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                 <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 5 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
+        <div class="glide mt-10 flex flex-col">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img class="rounded-xl" src="./img/gym1.jpg"/></li>
+                <li class="glide__slide"><img class="rounded-xl" src="./img/gym2.jpg"/></li>
+                <li class="glide__slide"><img class="rounded-xl" src="./img/gym3.jpg"/></li>
+                <li class="glide__slide"><img class="rounded-xl" src="./img/gym4.jpg"/></li>
+                <li class="glide__slide"><img class="rounded-xl" src="./img/gym6.jpg"/></li>
+              </ul>
             </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            <div class="glide__arrows text-neutral-200 text-3xl font-extrabold flex pt-4 w-full" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left mx-auto border-neutral-100 border-2 rounded-xl py-1 px-4" data-glide-dir="<">&#8810;</button>
+                <button class="glide__arrow glide__arrow--right mx-auto border-neutral-100 border-2 rounded-xl p-1 px-4" data-glide-dir=">">&#8811;</button>
             </div>
-            <!-- Slider controls -->
-            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
         </div>
 
         <div class="mx-auto mt-20"><h2 class="font-bold text-4xl text-neutral-100 underline italic underline-offset-4">FitZone</h2></div>
         <div class="mx-auto text-center mt-6">
-            <p class="text-xl px-4 text-neutral-100">Since 2003 we lead one of the biggest gyms in the whole Switzerland and had over the last 10 years more than 10'000 active members.
+            <p class="text-xl px-4 text-neutral-100 text-justify">Since 2003 we lead one of the biggest gyms in the whole Switzerland and had over the last 10 years more than 10'000 active members.
                 <br><br>Join now to be a part of our awesome community and let the gains begin.
             </p>
         </div>
@@ -112,5 +82,7 @@
             <button class="border-neutral-100 border-4 rounded-xl p-3 px-8 text-base">Join now</button>
         </div>
     </div>
+
+    <script type="module" src="./scripts/script.js"></script>
 </body>
 </html>

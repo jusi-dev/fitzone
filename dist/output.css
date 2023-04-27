@@ -998,6 +998,7 @@ video {
   border-color: rgb(245 245 245 / var(--tw-border-opacity));
 }
 
+
 .border-l-transparent {
   border-left-color: transparent;
 }
@@ -1071,6 +1072,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+
 
 .bg-\[size\] {
   background-color: size;
@@ -1484,6 +1486,11 @@ video {
 .text-zinc-200 {
   --tw-text-opacity: 1;
   color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.text-zinc-400 {
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
 .underline {
