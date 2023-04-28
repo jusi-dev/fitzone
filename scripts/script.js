@@ -4,7 +4,7 @@ new Glide('.glide', {
     type: 'carousel',
     perView: 1,
     autoplay: 4000,
-    animationDuration: 1000
+    animationDuration: 600
 }).mount()
 
 window.addEventListener("load", (event) => {

@@ -7,6 +7,11 @@
     <link href="./dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="./dist/glide.core.min.css">
     <title>FitZone</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <nav class="flex flex-row w-full  h-auto p-6 fixed z-50">
@@ -35,110 +40,144 @@
     </div>
 
     <!-- Overview section -->
-    <div class="flex w-full p-6 bg-gradient-to-b from-zinc-900 to-zinc-500 flex-col pb-20">
-        <div class="mx-auto mt-16"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">What we offer:</h2></div>
-        <div class="mt-8 mx-auto border-4 rounded-xl border-cyan-400 p-8">
-            <div>
-                <img class="mx-auto w-24" src="./img/hantel-neutral.png">
-                <h2 class="pt-3 font-bold text-2xl text-neutral-100 text-center">Train on 1000m<sup>2</sup>  area</h2>
-                <p class="text-neutral-200 text-center">Our building stands on a 1000m<sup>2</sup>  area where you have enough place for all your activities.</p>
-            </div>
-            <div class="pt-12 mt-4">
-                <img class="mx-auto w-24" src="./img/laufband.png">
-                <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Use over 100 machines</h2>
-                <p class="text-neutral-200 text-center">We have many machines from different brands like HammerStrength, LifeFitness, Matrix and more.</p>
-            </div>
-            <div class="pt-12 mt-4">
-                <img class="mx-auto w-24" src="./img/parkplatz.png">
-                <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Free parking spots</h2>
-                <p class="text-neutral-200 text-center">All our members can use our free parking spots directly next to our gym.</p>
-            </div>
-            <div class="pt-12 mt-4">
-                <img class="mx-auto w-24" src="./img/money.png">
-                <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Anual or monthly payment</h2>
-                <p class="text-neutral-200 text-center">You decide if you want to pay your membership in a monthly or anual rate. It belongs to you.</p>
+    <div class="flex w-full bg-gradient-to-b from-zinc-900 to-zinc-500 flex-col">
+
+        <!-- Offer Section -->
+
+        <div class="flex flex-col p-6 ">
+            <div class="mx-auto mt-16"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">What we offer:</h2></div>
+            <div class="mt-8 mx-auto border-4 rounded-xl border-cyan-400 p-8">
+                <div>
+                    <img class="mx-auto w-24" src="./img/hantel-neutral.png">
+                    <h2 class="pt-3 font-bold text-2xl text-neutral-100 text-center">Train on 1000m<sup>2</sup>  area</h2>
+                    <p class="text-neutral-200 text-center">Our building stands on a 1000m<sup>2</sup>  area where you have enough place for all your activities.</p>
+                </div>
+                <div class="pt-12 mt-4">
+                    <img class="mx-auto w-24" src="./img/laufband.png">
+                    <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Use over 100 machines</h2>
+                    <p class="text-neutral-200 text-center">We have many machines from different brands like HammerStrength, LifeFitness, Matrix and more.</p>
+                </div>
+                <div class="pt-12 mt-4">
+                    <img class="mx-auto w-24" src="./img/parkplatz.png">
+                    <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Free parking spots</h2>
+                    <p class="text-neutral-200 text-center">All our members can use our free parking spots directly next to our gym.</p>
+                </div>
+                <div class="pt-12 mt-4">
+                    <img class="mx-auto w-24" src="./img/money.png">
+                    <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Anual or monthly payment</h2>
+                    <p class="text-neutral-200 text-center">You decide if you want to pay your membership in a monthly or anual rate. It belongs to you.</p>
+                </div>
             </div>
         </div>
+
+        <!-- Carousel Section -->
 
         <div class="glide mt-10 flex flex-col">
-            <div data-glide-el="track" class="glide__track">
-              <ul class="glide__slides">
-                <li class="glide__slide"><img class="rounded-xl" src="./img/gym1.jpg"/></li>
-                <li class="glide__slide"><img class="rounded-xl" src="./img/gym2.jpg"/></li>
-                <li class="glide__slide"><img class="rounded-xl" src="./img/gym3.jpg"/></li>
-                <li class="glide__slide"><img class="rounded-xl" src="./img/gym4.jpg"/></li>
-                <li class="glide__slide"><img class="rounded-xl" src="./img/gym6.jpg"/></li>
-              </ul>
+            <div class="p-6">
+                <div data-glide-el="track" class="glide__track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym1.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym2.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym3.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym4.jpg"/></li>
+                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym6.jpg"/></li>
+                </ul>
+                </div>
+                <div class="glide__arrows text-neutral-200 text-3xl font-extrabold flex pt-4 w-full" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left mx-auto border-neutral-100 border-2 rounded-xl py-1 px-4" data-glide-dir="<">&#8810;</button>
+                    <button class="glide__arrow glide__arrow--right mx-auto border-neutral-100 border-2 rounded-xl p-1 px-4" data-glide-dir=">">&#8811;</button>
+                </div>
             </div>
-            <div class="glide__arrows text-neutral-200 text-3xl font-extrabold flex pt-4 w-full" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left mx-auto border-neutral-100 border-2 rounded-xl py-1 px-4" data-glide-dir="<">&#8810;</button>
-                <button class="glide__arrow glide__arrow--right mx-auto border-neutral-100 border-2 rounded-xl p-1 px-4" data-glide-dir=">">&#8811;</button>
-            </div>
+            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] border-b-neutral-100"></div>
         </div>
 
-        <div class="flex flex-col mt-20">
-            <div class="mx-auto"><h2 class="font-bold text-4xl text-neutral-100 underline italic underline-offset-4 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">FitZone</h2></div>
-            <div class="border-cyan-400 border-4 rounded-xl pt-1 pb-8 mt-8 flex flex-col ">
-                <div class="mx-auto text-center mt-6">
-                    <p class="text-xl px-4 text-neutral-100 text-center">Since 2003 we lead one of the biggest gyms in the whole Switzerland and had over the last 10 years more than 10'000 active members.
-                        <br><br>Join now to be a part of our awesome community and let the gains begin.
-                    </p>
+        <!-- About Section -->
+
+        <div class="flex flex-col bg-cyan-500">
+            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] border-t-neutral-200"></div>
+            <div class="p-6 pb-16 flex flex-col">
+                <div class="mx-auto mt-10"><h2 class="font-bold text-4xl text-neutral-100 underline italic underline-offset-4 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">FitZone</h2></div>
+                <div class="border-neutral-100 border-4 rounded-xl pt-1 pb-8 mt-8 flex flex-col ">
+                    <div class="mx-auto text-center mt-6">
+                        <p class="text-xl px-4 text-neutral-100 text-center">Since 2003 we lead one of the biggest gyms in the whole Switzerland and had over the last 10 years more than 10'000 active members.
+                            <br><br>Join now to be a part of our awesome community and let the gains begin.
+                        </p>
+                    </div>
+                    <div class="mx-auto text-neutral-100 font-bold mb-auto pt-8">
+                        <button class="border-neutral-100 border-4 rounded-xl p-3 px-8 text-base drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Join now</button>
+                    </div>
                 </div>
-                <div class="mx-auto text-neutral-100 font-bold mb-auto pt-8">
-                    <button class="border-neutral-100 border-4 rounded-xl p-3 px-8 text-base drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Join now</button>
-                </div>
-        </div>
+            </div> 
+            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] border-b-neutral-100"></div>
         </div> 
-        
-        <div class="flex flex-col w-full mt-32 font-bold text-4xl text-neutral-200 text-center">
-            <h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Memberships</h2>
-            <div class="border-stone-400 border-4 rounded-xl p-3 mt-8 text-4xl bg-zinc-700">
-                <h3 class="underline underline-offset-4 decoration-neutral-200 mt-3">Basic</h3>
-                <p class="mt-2 text-lg italic">12 months</p>
-                <ul class="text-base list-disc list-inside pt-4 block">
-                    <li>24/7 access</li>
-                    <li>Help from coaches</li>
-                    <li>Free chip band</li>
-                    <li>FitZone App</li>
-                    <li>Group Fitness</li>
-                    <li>Shower & Wardrobe</li>
-                </ul>
-                <p class="pt-12 text-3xl">CHF 899.-</p>
-                <button class="border-neutral-100 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(245,245,245,0.8)]">Buy now</button>
-            </div>
 
-            <div class="border-amber-500 border-4 rounded-xl p-3 mt-12 text-4xl bg-zinc-700">
-                <h3 class="underline underline-offset-4 decoration-amber-500 mt-3 italic">Premium</h3>
-                <p class="mt-2 text-lg italic">12 months</p>
-                <ul class="text-base list-disc list-inside pt-4 block">
-                    <li>24/7 access</li>
-                    <li>Personal coach</li>
-                    <li>Free chip band</li>
-                    <li>FitZone App</li>
-                    <li>Group Fitness</li>
-                    <li>Shower & Wardrobe</li>
-                    <li>Diet plans</li>
-                    <li>Tanning booth</li>
-                    <li>Free drinks</li>
-                </ul>
-                <p class="pt-12 text-3xl">CHF 999.-</p>
-                <button class="border-neutral-100 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(245,158,11,0.8)]">Buy now</button>
+        <!-- Membership Section -->
+        
+        <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center">
+            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] border-t-neutral-200"></div>
+            <div class="mt-10 p-6 pb-16">
+                <h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Memberships</h2>
+                <div class="border-zinc-800 border-4 rounded-xl mt-12 text-4xl bg-zinc-700">
+                    <div class="bg-zinc-500 p-3 rounded-t-lg">
+                        <h3 class="underline underline-offset-4 decoration-zinc-700 mt-3 italic">Basic</h3>
+                        <p class="mt-2 text-lg italic">12 months</p>
+                    </div> 
+                    <div class="p-3 bg-zinc-100 text-gray-700 rounded-b-lg">
+                        <ul class="text-base list-disc list-inside pt-4 block">
+                            <li>24/7 access</li>
+                            <li>Help from coaches</li>
+                            <li>Free chip band</li>
+                            <li>FitZone App</li>
+                            <li>Group Fitness</li>
+                            <li>Shower & Wardrobe</li>
+                        </ul>
+                        <p class="pt-12 text-3xl">CHF 799.-</p>
+                        <button class="border-zinc-500 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(161,161,170,0.8)]">Buy now</button>
+                    </div>
+                </div>
+
+                <div class="border-amber-700 border-4 rounded-xl mt-12 text-4xl bg-zinc-700">
+                    <div class="bg-amber-500 p-3 rounded-t-lg">
+                        <h3 class="underline underline-offset-4 decoration-amber-700 mt-3 italic">Premium</h3>
+                        <p class="mt-2 text-lg italic">12 months</p>
+                    </div> 
+                    <div class="p-3 bg-zinc-100 text-gray-700 rounded-b-lg">
+                        <ul class="text-base list-disc list-inside pt-4 block">
+                            <li>24/7 access</li>
+                            <li>Personal coach</li>
+                            <li>Free chip band</li>
+                            <li>FitZone App</li>
+                            <li>Group Fitness</li>
+                            <li>Shower & Wardrobe</li>
+                            <li>Diet plans</li>
+                            <li>Tanning booth</li>
+                            <li>Free drinks</li>
+                        </ul>
+                        <p class="pt-12 text-3xl">CHF 999.-</p>
+                        <button class="border-amber-500 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(245,158,11,0.8)]">Buy now</button>
+                    </div>
+                </div>
             </div>
+            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] border-b-neutral-100"></div>
         </div>
 
-        <div class="flex flex-col w-full mt-32 font-bold text-4xl text-neutral-200 text-center">
-            <h2 class="font-bold text-3xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Your way to become a part of us</h2>
-            <div class="border-cyan-400 border-4 rounded-xl mt-8">
-                <p class="font-bold text-7xl mt-10">01</p>
-                <p class="text-2xl">Visit us for a trial training</p>
-                <p class="font-bold text-7xl mt-10">02</p>
-                <p class="text-2xl">Choose your subscription</p>
-                <p class="font-bold text-7xl mt-10">03</p>
-                <p class="text-2xl">Get your starter pack</p>
-                <p class="font-bold text-7xl mt-10">04</p>
-                <p class="text-2xl mb-8">Enjoy your training</p>
+        <!-- Get started Section -->
+
+        <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center bg-cyan-500">
+            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] border-t-neutral-200"></div>
+            <div class="pt-10 p-6 pb-20">
+                <h2 class="font-bold text-3xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Your way to become a part of us</h2>
+                <div class="border-neutral-100 border-4 rounded-xl mt-8">
+                    <p class="font-bold text-7xl mt-10">01</p>
+                    <p class="text-2xl">Visit us for a trial training</p>
+                    <p class="font-bold text-7xl mt-10">02</p>
+                    <p class="text-2xl">Choose your subscription</p>
+                    <p class="font-bold text-7xl mt-10">03</p>
+                    <p class="text-2xl">Get your starter pack</p>
+                    <p class="font-bold text-7xl mt-10">04</p>
+                    <p class="text-2xl mb-8">Enjoy your training</p>
+                </div>
             </div>
-            
         </div>
 
     </div>
