@@ -21,16 +21,17 @@
             <div><h1 class="text-3xl font-bold text-white text-center italic">FitZone</h1></div>
         </div>
         <div class="space-y-2 block ml-auto my-auto z-50" id="burger-menu">
-            <span class="block w-8 h-1 bg-gray-100 animate-pulse"></span>
-            <span class="block w-8 h-1 bg-gray-100 animate-pulse"></span>
-            <span class="block w-8 h-1 bg-gray-100 animate-pulse"></span>
+            <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
+            <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
+            <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
         </div>
     </nav>
-    <div class="w-full h-full bg-white fixed transition-all text-center z-40" id="nav-links">
-        <ul class="md:flex md:items-center mt-[30vh] text-3xl text-zinc-700 gap-8">
+    <div class="w-full h-full bg-gradient-to-b from-neutral-100 to-cyan-400 fixed transition-all text-center z-40" id="nav-links">
+        <ul class="md:flex md:items-center mt-[30vh] text-3xl text-zinc-700 gap-8 nav-items">
+            <li class="text-cyan-500 font-extrabold text-4xl mb-4">FitZone</li>
             <li><a href="#what-we-offer" class="hover:text-gray-500">What we offer</a></li>
             <li><a href="#about-us" class="hover:text-gray-500">About Us</a></li>
-            <li><a href="#memberships" class="hover:text-gray-500">Memberships</a></li>
+            <li><a href="#membership" class="hover:text-gray-500">Membership</a></li>
             <li><a href="#join-us" class="hover:text-gray-500">Join us!</a></li>
         </ul>
     </div>
@@ -54,7 +55,7 @@
 
         <!-- Offer Section -->
 
-        <div class="flex flex-col p-6 ">
+        <div class="flex flex-col p-6" id="what-we-offer">
             <div class="mx-auto mt-16"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">What we offer:</h2></div>
             <div class="mt-8 mx-auto border-4 rounded-xl border-cyan-400 p-8 md:p-24">
                 <div>
@@ -103,7 +104,7 @@
 
         <!-- About Section -->
 
-        <div class="flex flex-col bg-cyan-500 bg-[url('../img/gym8.1.png')] bg-center bg-no-repeat bg-[size:auto_100%]">
+        <div class="flex flex-col bg-cyan-500 bg-[url('../img/gym8.1.png')] bg-center bg-no-repeat bg-[size:auto_100%]" id="about-us">
             <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] border-t-neutral-200"></div>
             <div class="p-6 pb-16 md:p-24 flex flex-col">
                 <div class="mx-auto mt-10"><h2 class="font-bold text-4xl text-neutral-100 underline italic underline-offset-4 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">FitZone</h2></div>
@@ -129,7 +130,7 @@
 
         <!-- Membership Section -->
         
-        <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center">
+        <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center" id="membership">
             <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] border-t-neutral-200"></div>
             <div class="mt-10 p-6 pb-16 md:p-24">
                 <h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Memberships</h2>
@@ -185,7 +186,7 @@
 
         <!-- Get started Section -->
 
-        <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center bg-cyan-500">
+        <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center bg-cyan-500" id="join-us">
             <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] border-t-neutral-200"></div>
             <div class="pt-10 p-6 pb-20 md:p-24">
                 <h2 class="font-bold text-3xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Your way to become a part of us</h2>
