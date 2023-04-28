@@ -10,3 +10,23 @@ new Glide('.glide', {
 window.addEventListener("load", (event) => {
     console.log("page is fully loaded");
   });
+
+  const burgerMenu = document.getElementById('burger-menu');
+  const navLinks = document.getElementById('nav-links');
+  // navLinks.style.display = "none";
+
+  navLinks.style.transform = "translateY(-100vh)";
+  
+  burgerMenu.addEventListener('click', function() {
+    console.log("test");
+    navLinks.classList.toggle('active');
+    if (navLinks.classList.contains('active')) {
+        navLinks.style.transform = "translateY(0vh)"
+    } else {
+        navLinks.style.transform = "translateY(-100vh)";
+    }
+  });
+
+  
+
+  
