@@ -526,6 +526,14 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -663,6 +671,10 @@ video {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .w-24 {
@@ -1079,6 +1091,26 @@ video {
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/img\'\)\] {
+  background-image: url('../img');
+}
+
+.bg-\[url\(\'\.\.\/img\/\'\)\] {
+  background-image: url('../img/');
+}
+
+.bg-\[url\(\'\.\.\/img\/gym\'\)\] {
+  background-image: url('../img/gym');
+}
+
+.bg-\[url\(\'\.\.\/img\/gym5\.jpg\'\)\] {
+  background-image: url('../img/gym5.jpg');
+}
+
+.bg-\[url\(\'\.\.\/img\/gym7\.jpg\'\)\] {
+  background-image: url('../img/gym7.jpg');
 }
 
 .from-zinc-900 {
