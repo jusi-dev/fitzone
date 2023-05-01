@@ -8,6 +8,8 @@ new Glide('.glide', {
     hoverpause: false
 }).mount()
 
+const heroScreen = document.getElementById('welcome');
+
 window.addEventListener("load", (event) => {
     console.log("page is fully loaded");
   });
@@ -47,6 +49,39 @@ window.addEventListener("load", (event) => {
     })
   })
 
+  const offerSection = document.getElementById('what-we-offer');
+  const aboutSection = document.getElementById('about-us');
+  const memberSection = document.getElementById('membership');
+  const joinSection = document.getElementById('join-us');
+
+  const animationObserver = new IntersectionObserver((entries) => {
+    // Check if element is intersecting with the viewport
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        if (entry.target === offerSection) {
+          entry.target.classList.add('animate__fadeIn');
+          offerSection.style.visibility = 'visible';
+        } else if (entry.target === aboutSection) {
+          entry.target.classList.add('animate__fadeInLeft');
+          aboutSection.style.visibility = 'visible';
+        } else if (entry.target === memberSection) {
+          entry.target.classList.add('animate__fadeInRight');
+          memberSection.style.visibility = 'visible';
+        } else if (entry.target === joinSection) {
+          entry.target.classList.add('animate__fadeInLeft');
+          joinSection.style.visibility = 'visible';
+        }
+      }
+    }
+  }, {
+    rootMargin: '-10%'
+  });
+
+  animationObserver.observe(offerSection);
+  animationObserver.observe(aboutSection);
+  animationObserver.observe(memberSection);
+  animationObserver.observe(joinSection);
+  
   
 
   
