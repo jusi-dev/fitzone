@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="./dist/style.css"/>
 </head>
 <body class="overflow-x-hidden">
-    <nav class="flex flex-row w-full  h-auto p-6 fixed z-50 bg-black/50 lg:bg-yellow-500 xl:bg-green-500 2xl:bg-blue-500">
+    <nav class="flex flex-row w-full  h-auto p-6 fixed z-50 bg-black/50">
         <div class="">
-            <div><h1 class="text-3xl font-bold text-white text-center italic">FitZone</h1></div>
+            <div><a href="#welcome"><h1 class="text-3xl font-bold text-white text-center italic cursor-pointer">FitZone</h1></a></div>
         </div>
         <div class="space-y-2 block ml-auto my-auto z-50 lg:hidden" id="burger-menu">
             <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
@@ -45,7 +45,7 @@
     </div>
 
     <!-- Hero section -->
-    <div class="bg-[url('../img/hero.jpg')] bg-center 2xl:bg-[position:center_25%] bg-no-repeat bg-[size:auto_100%] lg:bg-[size:auto_100%] xl:bg-[size:100%_auto]  flex flex-col h-screen">
+    <div class="bg-[url('../img/hero.jpg')] bg-center 2xl:bg-[position:center_25%] bg-no-repeat bg-[size:auto_100%] lg:bg-[size:auto_100%] xl:bg-[size:100%_auto]  flex flex-col h-screen" id="welcome">
         <div class="mt-auto mb-36 md:mb-[20vh] lg:mb-[10vh] w-full flex flex-col pl-6 xl:pl-16 2xl:pl-20">
             <div class="text-white font-bold text-5xl">
                 <h2 class="">Achieve your dreams at</h2>
@@ -55,7 +55,7 @@
                 <button class="border-4 rounded p-3 text-base hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90">Become a member</button>
             </div>
         </div>
-        <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-b-[14vh] 2xl:border-b-[16vh] border-b-zinc-900"></div>
+        <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-b-[14vw] md:border-b-[14vh] 2xl:border-b-[16vh] border-b-zinc-900"></div>
     </div>
 
     <!-- Overview section -->
@@ -65,7 +65,7 @@
 
         <div class="flex flex-col p-6" id="what-we-offer">
             <div class="mx-auto mt-16"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">What we offer:</h2></div>
-            <div class="mt-8 lg:mt-12 mx-auto border-4 rounded-xl border-cyan-400 p-8 md:m-20 lg:m-32 lg:grid lg:grid-cols-2 lg:gap-6">
+            <div class="mt-8 lg:mt-12 mx-auto border-4 rounded-xl border-cyan-400 p-8 md:m-20 lg:m-32 2xl:m-24 lg:grid lg:grid-cols-2 2xl:grid-cols-4 lg:gap-6">
                 <div class="lg:mt-4">
                     <img class="mx-auto w-24" src="./img/hantel-neutral.png">
                     <h2 class="pt-3 font-bold text-2xl text-neutral-100 text-center">Train on 1000m<sup>2</sup>  area</h2>
@@ -76,12 +76,12 @@
                     <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Use over 100 machines</h2>
                     <p class="text-neutral-200 text-center">We have many machines from different brands like HammerStrength, LifeFitness, Matrix and more.</p>
                 </div>
-                <div class="pt-12 mt-4">
+                <div class="pt-12 mt-4 2xl:pt-0">
                     <img class="mx-auto w-24" src="./img/parkplatz.png">
                     <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Free parking spots</h2>
                     <p class="text-neutral-200 text-center">All our members can use our free parking spots directly next to our gym.</p>
                 </div>
-                <div class="pt-12 mt-4">
+                <div class="pt-12 mt-4 2xl:pt-0">
                     <img class="mx-auto w-24" src="./img/money.png">
                     <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Anual or monthly payment</h2>
                     <p class="text-neutral-200 text-center">You decide if you want to pay your membership in a monthly or anual rate. It belongs to you.</p>
@@ -92,17 +92,17 @@
         <!-- Carousel Section -->
 
         <div class="glide mt-10 lg:mt-0 md:mt-6 flex flex-col">
-            <div class="p-6 md:p-20 lg:px-32 lg:py-4">
+            <div class="flex flex-col p-6 md:p-20 lg:px-32 lg:py-4 2xl:px-40 2xl:max-w-[90vw] mx-auto">
                 <div data-glide-el="track" class="glide__track">
-                <ul class="glide__slides">
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym1.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym2.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym3.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym4.jpg"/></li>
-                    <li class="glide__slide"><img class="rounded-xl" src="./img/gym6.jpg"/></li>
-                </ul>
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img class="rounded-xl" src="./img/gym1.jpg"/></li>
+                        <li class="glide__slide"><img class="rounded-xl" src="./img/gym2.jpg"/></li>
+                        <li class="glide__slide"><img class="rounded-xl" src="./img/gym3.jpg"/></li>
+                        <li class="glide__slide"><img class="rounded-xl" src="./img/gym4.jpg"/></li>
+                        <li class="glide__slide"><img class="rounded-xl" src="./img/gym6.jpg"/></li>
+                    </ul>
                 </div>
-                <div class="glide__arrows text-neutral-200 text-3xl font-extrabold flex pt-4 w-full" data-glide-el="controls">
+                <div class="glide__arrows text-neutral-200 text-3xl font-extrabold flex pt-4 w-full 2xl:pt-10" data-glide-el="controls">
                     <button class="glide__arrow glide__arrow--left mx-auto border-neutral-100 border-2 rounded-xl py-1 px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir="<">&#8810;</button>
                     <button class="glide__arrow glide__arrow--right mx-auto border-neutral-100 border-2 rounded-xl p-1 px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir=">">&#8811;</button>
                 </div>
@@ -140,10 +140,10 @@
         
         <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center" id="membership">
             <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vh] border-t-neutral-200"></div>
-            <div class="mt-10 md:mt-6 p-6 pb-16 md:p-24 lg:my-20 lg:mx-0">
+            <div class="mt-10 md:mt-6 p-6 pb-16 md:p-24 lg:my-20 2xl:my-10 2xl:mt-4 lg:mx-0">
                 <h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Memberships</h2>
-                <div class="lg:grid lg:grid-cols-2 lg:gap-x-10">
-                    <div class="border-zinc-800 border-4 rounded-xl mt-12 text-4xl bg-zinc-100">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-x-52 2xl:gap-x-14 2xl:mx-auto place-content-center 2xl:mt-16">
+                    <div class="border-zinc-800 border-4 rounded-xl mt-12 text-4xl bg-zinc-100 2xl:max-w-[35vw] 2xl:min-w-[30vw] 2xl:mx-auto">
                         <div class="bg-zinc-500 p-3 rounded-t-lg">
                             <h3 class="decoration-zinc-700 mt-3">Basic</h3>
                             <p class="mt-2 text-lg italic">12 months</p>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="border-amber-700 border-4 rounded-xl mt-12 text-4xl bg-zinc-700">
+                    <div class="border-amber-700 border-4 rounded-xl mt-12 text-4xl bg-zinc-700 2xl:max-w-[35vw] 2xl:min-w-[30vw] 2xl:mx-auto">
                         <div class="bg-amber-500 p-3 rounded-t-lg">
                             <h3 class="underline underline-offset-4 decoration-amber-700 mt-3 italic">Premium</h3>
                             <p class="mt-2 text-lg italic">12 months</p>
@@ -189,7 +189,7 @@
         </div>
 
         <!-- Image section -->
-        <div class="flex flex-col bg-[url('../img/gym5.jpg')] h-[50vh] bg-center bg-no-repeat bg-[size:auto_100%] lg:bg-[size:100%_auto]">
+        <div class="flex flex-col bg-[url('../img/gym5.jpg')] h-[50vh] bg-center 2xl:bg-[position:center_40%] bg-no-repeat bg-[size:auto_100%] lg:bg-[size:100%_auto]">
             <div class="relative w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vh] border-t-neutral-200"></div>
             <div class="flex mt-auto w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vh] border-b-neutral-100"></div>
         </div>
