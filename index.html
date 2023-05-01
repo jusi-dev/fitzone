@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth"" lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,21 +13,29 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="./dist/style.css"
+    <link rel="stylesheet" href="./dist/style.css"/>
 </head>
-<body>
-    <nav class="flex flex-row w-full  h-auto p-6 fixed z-50">
+<body class="overflow-x-hidden">
+    <nav class="flex flex-row w-full  h-auto p-6 fixed z-50 bg-black/50 lg:bg-yellow-500 xl:bg-green-500 2xl:bg-blue-500">
         <div class="">
             <div><h1 class="text-3xl font-bold text-white text-center italic">FitZone</h1></div>
         </div>
-        <div class="space-y-2 block ml-auto my-auto z-50" id="burger-menu">
+        <div class="space-y-2 block ml-auto my-auto z-50 lg:hidden" id="burger-menu">
             <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
             <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
             <span class="block w-8 h-1 bg-gray-100 animate-pulse bar"></span>
         </div>
+        <ul class="hidden lg:flex text-2xl  gap-8 ml-auto mr-10 text-white">
+            <li><a href="#what-we-offer" class="hover:text-cyan-400">What we offer</a></li>
+            <li><a href="#about-us" class="hover:text-cyan-400">About Us</a></li>
+            <li><a href="#membership" class="hover:text-cyan-400">Membership</a></li>
+            <li><a href="#join-us" class="hover:text-cyan-400">Join us!</a></li>
+        </ul>
     </nav>
-    <div class="w-full h-full bg-gradient-to-b from-neutral-100 to-cyan-400 fixed transition-all text-center z-40" id="nav-links">
-        <ul class="md:flex md:items-center mt-[30vh] text-3xl text-zinc-700 gap-8 nav-items">
+    <div>
+    </div>
+    <div class="w-full h-full bg-gradient-to-b from-neutral-100 to-cyan-400 fixed transition-all text-center z-40 lg:hidden" id="nav-links">
+        <ul class="md:flex md:flex-col md:items-center mt-[30vh] text-3xl text-zinc-700 gap-8 nav-items">
             <li class="text-cyan-500 font-extrabold text-4xl mb-4">FitZone</li>
             <li><a href="#what-we-offer" class="hover:text-gray-500">What we offer</a></li>
             <li><a href="#about-us" class="hover:text-gray-500">About Us</a></li>
@@ -37,17 +45,17 @@
     </div>
 
     <!-- Hero section -->
-    <div class="bg-[url('../img/hero.jpg')] bg-center bg-no-repeat bg-[size:auto_100%] lg:bg-[size:100%_auto]  flex flex-col h-screen">
-        <div class="mt-auto mb-36 md:mb-[20vh] lg:mb-[10vh] w-full flex flex-col pl-6">
+    <div class="bg-[url('../img/hero.jpg')] bg-center 2xl:bg-[position:center_25%] bg-no-repeat bg-[size:auto_100%] lg:bg-[size:auto_100%] xl:bg-[size:100%_auto]  flex flex-col h-screen">
+        <div class="mt-auto mb-36 md:mb-[20vh] lg:mb-[10vh] w-full flex flex-col pl-6 xl:pl-16 2xl:pl-20">
             <div class="text-white font-bold text-5xl">
                 <h2 class="">Achieve your dreams at</h2>
                 <p class="text-6xl text-cyan-500 pt-2">FitZone</p>
             </div>
             <div class="ml-auto mr-auto text-white font-bold mb-auto pt-28">
-                <button class="border-4 rounded p-3 text-base">Become a member</button>
+                <button class="border-4 rounded p-3 text-base hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90">Become a member</button>
             </div>
         </div>
-        <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-b-[14vw] border-b-zinc-900"></div>
+        <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-b-[14vh] 2xl:border-b-[16vh] border-b-zinc-900"></div>
     </div>
 
     <!-- Overview section -->
@@ -57,13 +65,13 @@
 
         <div class="flex flex-col p-6" id="what-we-offer">
             <div class="mx-auto mt-16"><h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">What we offer:</h2></div>
-            <div class="mt-8 mx-auto border-4 rounded-xl border-cyan-400 p-8 md:p-24">
-                <div>
+            <div class="mt-8 lg:mt-12 mx-auto border-4 rounded-xl border-cyan-400 p-8 md:m-20 lg:m-32 lg:grid lg:grid-cols-2 lg:gap-6">
+                <div class="lg:mt-4">
                     <img class="mx-auto w-24" src="./img/hantel-neutral.png">
                     <h2 class="pt-3 font-bold text-2xl text-neutral-100 text-center">Train on 1000m<sup>2</sup>  area</h2>
                     <p class="text-neutral-200 text-center">Our building stands on a 1000m<sup>2</sup>  area where you have enough place for all your activities.</p>
                 </div>
-                <div class="pt-12 mt-4">
+                <div class="pt-12 mt-4 lg:mt-3 lg:pt-0">
                     <img class="mx-auto w-24" src="./img/laufband.png">
                     <h2 class="pt-4 font-bold text-2xl text-neutral-100 text-center">Use over 100 machines</h2>
                     <p class="text-neutral-200 text-center">We have many machines from different brands like HammerStrength, LifeFitness, Matrix and more.</p>
@@ -83,8 +91,8 @@
 
         <!-- Carousel Section -->
 
-        <div class="glide mt-10 flex flex-col">
-            <div class="p-6 md:p-24">
+        <div class="glide mt-10 lg:mt-0 md:mt-6 flex flex-col">
+            <div class="p-6 md:p-20 lg:px-32 lg:py-4">
                 <div data-glide-el="track" class="glide__track">
                 <ul class="glide__slides">
                     <li class="glide__slide"><img class="rounded-xl" src="./img/gym1.jpg"/></li>
@@ -95,18 +103,18 @@
                 </ul>
                 </div>
                 <div class="glide__arrows text-neutral-200 text-3xl font-extrabold flex pt-4 w-full" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left mx-auto border-neutral-100 border-2 rounded-xl py-1 px-4" data-glide-dir="<">&#8810;</button>
-                    <button class="glide__arrow glide__arrow--right mx-auto border-neutral-100 border-2 rounded-xl p-1 px-4" data-glide-dir=">">&#8811;</button>
+                    <button class="glide__arrow glide__arrow--left mx-auto border-neutral-100 border-2 rounded-xl py-1 px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir="<">&#8810;</button>
+                    <button class="glide__arrow glide__arrow--right mx-auto border-neutral-100 border-2 rounded-xl p-1 px-4 hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90" data-glide-dir=">">&#8811;</button>
                 </div>
             </div>
-            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vw] border-b-neutral-100"></div>
+            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vh] border-b-neutral-100"></div>
         </div>
 
         <!-- About Section -->
 
-        <div class="flex flex-col bg-cyan-500 bg-[url('../img/gym8.1.png')] bg-center bg-no-repeat bg-[size:auto_100%]" id="about-us">
-            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vw] border-t-neutral-200"></div>
-            <div class="p-6 pb-16 md:p-24 flex flex-col">
+        <div class="flex flex-col bg-cyan-500 bg-[url('../img/gym8.1.png')] bg-center bg-no-repeat bg-[size:auto_100%] lg:bg-[size:auto_100%] xl:bg-[size:100%_auto]" id="about-us">
+            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vh] border-t-neutral-200"></div>
+            <div class="p-6 pb-16 md:p-24 flex flex-col lg:mx-32">
                 <div class="mx-auto mt-10"><h2 class="font-bold text-4xl text-neutral-100 underline italic underline-offset-4 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">FitZone</h2></div>
                 <div class="border-neutral-100 border-4 rounded-xl pt-1 pb-8 mt-8 flex flex-col ">
                     <div class="mx-auto text-center mt-6">
@@ -115,11 +123,11 @@
                         </p>
                     </div>
                     <div class="mx-auto text-neutral-100 font-bold mb-auto pt-8">
-                        <button class="border-neutral-100 border-4 rounded-xl p-3 px-8 text-base drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Join now</button>
+                        <button class="border-neutral-100 border-4 rounded-xl p-3 px-8 text-base drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)] hover:scale-110 hover:text-cyan-400 hover:border-cyan-400 transition-all active:scale-90">Join now</button>
                     </div>
                 </div>
             </div> 
-            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vw] border-b-neutral-100"></div>
+            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vh] border-b-neutral-100"></div>
         </div> 
 
         <!-- Image section -->
@@ -131,66 +139,68 @@
         <!-- Membership Section -->
         
         <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center" id="membership">
-            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vw] border-t-neutral-200"></div>
-            <div class="mt-10 p-6 pb-16 md:p-24">
+            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vh] border-t-neutral-200"></div>
+            <div class="mt-10 md:mt-6 p-6 pb-16 md:p-24 lg:my-20 lg:mx-0">
                 <h2 class="font-bold text-4xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Memberships</h2>
-                <div class="border-zinc-800 border-4 rounded-xl mt-12 text-4xl bg-zinc-700">
-                    <div class="bg-zinc-500 p-3 rounded-t-lg">
-                        <h3 class="underline underline-offset-4 decoration-zinc-700 mt-3 italic">Basic</h3>
-                        <p class="mt-2 text-lg italic">12 months</p>
-                    </div> 
-                    <div class="p-3 bg-zinc-100 text-gray-700 rounded-b-lg">
-                        <ul class="text-base list-disc list-inside pt-4 block">
-                            <li>24/7 access</li>
-                            <li>Help from coaches</li>
-                            <li>Free chip band</li>
-                            <li>FitZone App</li>
-                            <li>Group Fitness</li>
-                            <li>Shower & Wardrobe</li>
-                        </ul>
-                        <p class="pt-12 text-3xl">CHF 799.-</p>
-                        <button class="border-zinc-500 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(161,161,170,0.8)]">Buy now</button>
+                <div class="lg:grid lg:grid-cols-2 lg:gap-x-10">
+                    <div class="border-zinc-800 border-4 rounded-xl mt-12 text-4xl bg-zinc-100">
+                        <div class="bg-zinc-500 p-3 rounded-t-lg">
+                            <h3 class="decoration-zinc-700 mt-3">Basic</h3>
+                            <p class="mt-2 text-lg italic">12 months</p>
+                        </div> 
+                        <div class="p-3 bg-zinc-100 text-gray-700 rounded-b-lg">
+                            <ul class="text-base list-disc list-inside pt-4 block">
+                                <li>24/7 access</li>
+                                <li>Help from coaches</li>
+                                <li>Free chip band</li>
+                                <li>FitZone App</li>
+                                <li>Group Fitness</li>
+                                <li>Shower & Wardrobe</li>
+                            </ul>
+                            <p class="pt-12 text-3xl">CHF 799.-</p>
+                            <button class="border-zinc-500 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(161,161,170,0.8)] hover:scale-110 transition-all active:scale-90">Buy now</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="border-amber-700 border-4 rounded-xl mt-12 text-4xl bg-zinc-700">
-                    <div class="bg-amber-500 p-3 rounded-t-lg">
-                        <h3 class="underline underline-offset-4 decoration-amber-700 mt-3 italic">Premium</h3>
-                        <p class="mt-2 text-lg italic">12 months</p>
-                    </div> 
-                    <div class="p-3 bg-zinc-100 text-gray-700 rounded-b-lg">
-                        <ul class="text-base list-disc list-inside pt-4 block">
-                            <li>24/7 access</li>
-                            <li>Personal coach</li>
-                            <li>Free chip band</li>
-                            <li>FitZone App</li>
-                            <li>Group Fitness</li>
-                            <li>Shower & Wardrobe</li>
-                            <li>Nutrition plans</li>
-                            <li>Tanning booth</li>
-                            <li>Free drinks</li>
-                        </ul>
-                        <p class="pt-12 text-3xl">CHF 999.-</p>
-                        <button class="border-amber-500 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(245,158,11,0.8)]">Buy now</button>
+                    <div class="border-amber-700 border-4 rounded-xl mt-12 text-4xl bg-zinc-700">
+                        <div class="bg-amber-500 p-3 rounded-t-lg">
+                            <h3 class="underline underline-offset-4 decoration-amber-700 mt-3 italic">Premium</h3>
+                            <p class="mt-2 text-lg italic">12 months</p>
+                        </div> 
+                        <div class="p-3 bg-zinc-100 text-gray-700 rounded-b-lg">
+                            <ul class="text-base list-disc list-inside pt-4 block">
+                                <li>24/7 access</li>
+                                <li>Personal coach</li>
+                                <li>Free chip band</li>
+                                <li>FitZone App</li>
+                                <li>Group Fitness</li>
+                                <li>Shower & Wardrobe</li>
+                                <li>Nutrition plans</li>
+                                <li>Tanning booth</li>
+                                <li>Free drinks</li>
+                            </ul>
+                            <p class="pt-12 text-3xl">CHF 999.-</p>
+                            <button class="border-amber-500 border-4 rounded-xl p-3 mt-3 px-8 text-base mb-3 drop-shadow-[0_3px_3px_rgba(245,158,11,0.8)] hover:scale-110 transition-all active:scale-90">Buy now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vw] border-b-neutral-100"></div>
+            <div class="flex mt-12 w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vh] border-b-neutral-100"></div>
         </div>
 
         <!-- Image section -->
-        <div class="flex flex-col bg-[url('../img/gym5.jpg')] h-[50vh] bg-center bg-no-repeat bg-[size:auto_100%]">
-            <div class="relative w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vw] border-t-neutral-200"></div>
-            <div class="flex mt-auto w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vw] border-b-neutral-100"></div>
+        <div class="flex flex-col bg-[url('../img/gym5.jpg')] h-[50vh] bg-center bg-no-repeat bg-[size:auto_100%] lg:bg-[size:100%_auto]">
+            <div class="relative w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vh] border-t-neutral-200"></div>
+            <div class="flex mt-auto w-auto h-2 border-r-[100vw] border-r-transparent border-b-[14vw] md:border-b-[10vh] border-b-neutral-100"></div>
         </div>
 
         <!-- Get started Section -->
 
         <div class="flex flex-col w-full font-bold text-4xl text-neutral-200 text-center bg-cyan-500" id="join-us">
-            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vw] border-t-neutral-200"></div>
+            <div class="flex w-auto h-2 border-l-[100vw] border-l-transparent border-t-[14vw] md:border-t-[10vh] border-t-neutral-200"></div>
             <div class="pt-10 p-6 pb-20 md:p-24">
                 <h2 class="font-bold text-3xl text-neutral-100 underline underline-offset-8 drop-shadow-[0_3px_3px_rgba(34,211,238,0.8)]">Your way to become a part of us</h2>
-                <div class="border-neutral-100 border-4 rounded-xl mt-8 md:grid md:grid-cols-2">
+                <div class="border-neutral-100 border-4 rounded-xl mt-8 md:grid md:grid-cols-2 2xl:grid-cols-4">
                     <div>
                         <p class="font-bold text-7xl mt-10">01</p>
                         <p class="text-2xl">Visit us for a trial training</p>

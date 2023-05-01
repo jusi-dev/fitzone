@@ -4,7 +4,8 @@ new Glide('.glide', {
     type: 'carousel',
     perView: 1,
     autoplay: 4000,
-    animationDuration: 600
+    animationDuration: 600,
+    hoverpause: false
 }).mount()
 
 window.addEventListener("load", (event) => {
@@ -21,7 +22,6 @@ window.addEventListener("load", (event) => {
   navLinks.style.transform = "translateY(-100vh)";
   
   burgerMenu.addEventListener('click', function() {
-    console.log("test");
     navLinks.classList.toggle('active');
     if (navLinks.classList.contains('active')) {
         navLinks.style.transform = "translateY(0vh)"
